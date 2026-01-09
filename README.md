@@ -13,7 +13,7 @@ Głównym celem tej strony jest **pozyskiwanie leadów poprzez umówienie bezpł
 * **Responsive Web Design:** Zastosowanie nowoczesnych metod responsywności, takich jak funkcja `clamp()`, Flexbox oraz Media Queries.
 * **UX/Accessibility:** Wykorzystanie natywnych elementów HTML (`details`/`summary`) dla lepszej czytelności sekcji FAQ bez użycia JavaScriptu.
 
-### Technologia:
+### Technologie:
 * **HTML5** (Semantyczna struktura)
 * **CSS3** (Flexbox, Mobile First Design, nowoczesne jednostki typograficzne)
 * **Integracja:** Widget kalendarza do konsultacji.

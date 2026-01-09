@@ -1,0 +1,959 @@
+/* --- GENERAL --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', 'Inter', sans-serif;
+}
+
+
+        /* ---- SEKCJA Hero ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.section-background-image {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    margin: 50px 100px;
+    padding: 20px 20px;
+}
+
+.title {
+    font-family: 'Oswald';
+    font-size: clamp(25px, 4vw, 80px);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title span {
+    background-color: #906c51;
+}
+
+.small-text {
+    font-family: 'Inter';
+    font-size: clamp(15px, 1.3vw, 25px);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.slogan {
+    font-family: 'Oswald';
+    font-size: clamp(20px, 2.6vw, 50px);
+    text-align: center;
+}
+
+#hero-button {
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.button a {
+    padding: 20px 30px;
+    font-family: 'Oswald';
+    font-size: clamp(18px, 2.4vw, 45px);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #bfa083;
+    border: none;
+    border-radius: 30px;
+    min-width: 230px;
+}
+
+.button a:hover {
+    color: black;
+    background-color: #e7dfd8;
+}
+ /* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+
+ @media (max-width: 1200px) {
+    .hero-text {
+        margin: 30px 80px;
+        padding: 15px 15px;
+        width: 100%;
+}
+ }
+
+ /* --- TABLETY W PIONIE (max 768px) ---*/
+
+ @media (max-width: 768px) {
+    .hero-text {
+        margin: 30px 50px;
+        padding: 15px 15px;
+        width: 100%;
+}
+
+    .title {
+        margin-bottom: 70px;
+    }
+
+    .small-text {
+        margin-bottom: 70px;
+    }
+ }
+
+ /* --- TELEFONY (max 480px) ---*/
+
+ @media (max-width: 480px) {
+    .hero-text {
+        width: auto;
+        margin: 0;
+        padding: 15px;
+}
+
+    .title {
+        margin-bottom: 70px;
+    }
+
+    .small-text {
+        margin-bottom: 70px;
+    }
+
+    #hero-button a {
+        padding: 15px 20px;
+ }
+}
+
+        /* ---- SEKCJA Problem-solution ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.problem-solution {
+    width: 100%;
+    min-height: 80vh;
+    background-color: white;
+}
+
+.border {
+    margin: 50px;
+    margin-bottom: 100px;
+    padding: 30px;
+    border: solid #e7dfd8;
+    position: relative;
+}
+
+.heading {
+    color: black;
+    font-family: 'Oswald';
+    font-size: clamp(20px, 3.5vw, 60px);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.box-two-places {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.first-place {
+    width: 50%;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.second-place {
+    width: 50%;
+    padding: 20px;
+}
+
+.regular-text {
+    color: black;
+    font-family: 'Inter';
+    font-size: clamp(12px, 1.2vw, 32px);
+    line-height: 1.5;
+}
+
+#problem-description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.list-title {
+    color: black;
+    font-family: 'Inter';
+    font-size: clamp(12px, 1.2vw, 32px);
+}
+
+#solution {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style-type: "✅";
+}
+
+#solution li {
+    color: black;
+    font-family: 'Inter';
+    font-size: clamp(12px, 1.2vw, 32px);
+    line-height: 1.5;
+}
+
+.strong-text {
+    color: black;
+    font-family: 'Inter';
+    font-size: clamp(12px, 1.2vw, 32px);
+    font-weight: bold;
+}
+
+#strong {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+    
+
+.calendly-inline-widget {
+    min-width: 320px;
+    height: 890px ;
+}
+
+#problem-solution-button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+@media (max-width: 1200px) {
+    .border {
+        margin: 50px 35px;
+        padding: 35px;
+    }
+
+    #problem {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    #problem-description {
+        margin-top: 0;
+    }
+}
+
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+
+@media (max-width: 768px) {
+
+    .box-two-places {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-place {
+        width: auto;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    #problem-description {
+        padding: 0;
+    }
+
+    .second-place {
+        width: auto;
+        padding: 0;
+    }
+    
+    .calendly-inline-widget {
+        min-width: 320px;
+        height: 650px;
+    }
+
+    #problem-solution-button a {
+        padding: 15px 20px;
+}
+
+}
+/* --- TELEFONY (max 480px) ---*/
+
+@media (max-width: 480px) {
+
+    .border {
+        margin: 50px 30px;
+        padding: 30px;
+    }
+
+    #problem {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .calendly-inline-widget {
+        min-width: 240px;
+        height: 650px;
+    }
+
+}
+
+        /* ---- SEKCJA Collaboration-process ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.cards-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cards {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding: 30px;
+    padding-top: 7%;
+    background-color: white;
+    width: 28%;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cards i{
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    font-size: clamp(24px, 2vw, 40px);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10%;
+}
+
+.stage-title {
+    font-family: 'Inter';
+    font-size: clamp(18px, 1.5vw, 32px);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.stage-text {
+    font-family: 'Inter';
+    font-size: clamp(16px, 1.3vw, 30px);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-text {
+    font-family: 'Inter';
+    font-size: clamp(16px, 1.5vw, 25px);
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px; 
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+
+@media (max-width: 768px){
+    .cards-box {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .cards {
+        width: 75%;
+        padding: 40px;
+        padding-top: 12%;
+    }
+
+    .cards i{
+        padding: 7%;
+    }
+}
+
+/* --- TELEFONY (max 480px) ---*/
+
+@media (max-width: 480px) {
+    .cards {
+        width: 85%;
+        padding: 20px;
+        padding-top: 60px;
+    }
+}
+
+
+        /* ---- SEKCJA Case-studies ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.case-studies-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.case-img {
+    width: 28%;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.case-img img {
+    display: block;
+    width: 100%;
+    
+}
+
+.desc-item {
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.client {
+    font-family: 'Inter';
+    font-size: clamp(14px, 1vw, 20px);
+    margin-bottom: 10px;
+}
+
+.description-text {
+    font-family: 'Inter';
+    font-size: clamp(14px, 1vw, 20px);
+    margin-bottom: 15px;
+}
+
+.additional-text {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 50px;
+}
+
+.more-projects {
+    font-family: 'Inter';
+    font-size: clamp(14px, 1vw, 20px);
+    text-decoration: none;
+    color:#bfa083;
+    margin-top: 20px;
+}
+
+.extra-text {
+    font-family: 'Inter';
+    font-size: clamp(14px, 1vw, 20px);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cta-mini {
+    font-family: 'Oswald';
+    font-size: clamp(18px, 2.2vw, 45px);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+@media (max-width: 768px) {
+
+    .border {
+        margin-top: 30px;
+    }
+
+    #case-studies-title {
+        margin: 15px;
+    }
+    
+    .case-studies-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .case-img, .desc-item {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Pierwsza para */
+    .case-img:nth-of-type(1) { order: 1; }
+    .desc-item:nth-of-type(4) { order: 2; }
+
+    /* Druga para */
+    .case-img:nth-of-type(2) { order: 3; }
+    .desc-item:nth-of-type(5) { order: 4; }
+
+    /* Trzecia para */
+    .case-img:nth-of-type(3) { order: 5; }
+    .desc-item:nth-of-type(6) { order: 6; }
+
+    .additional-text {
+        margin: 20px auto;
+        width: 90%;
+        text-align: left;
+    }
+
+    .additional-text a{
+        margin: 0;
+    }
+
+    .extra-text {
+        margin-top: 20px;
+    }
+
+    .cta-mini {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+        /* ---- SEKCJA Benefits ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+#benefits {
+    align-items: flex-start;
+    padding: 80px;
+}
+
+#benefits img{
+    max-width: 8%;
+}
+
+.benefits-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.benefits-list{
+    padding: 50px 25px;
+}
+
+.benefits-list li {
+    font-family: 'Inter';
+    font-size: clamp(12px, 1.2vw, 32px);
+    line-height: 1.7;
+}
+
+.benefits-text{
+    line-height: 1.5;
+}
+
+#reasons-title{
+    margin-top: 50px;
+}
+
+/* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+@media (max-width: 1200px){
+    .benefits-list{
+        padding: 30px 25px;
+    }
+
+    .benefits-text {
+        padding-left: 15px;
+    }
+
+    #reasons-title {
+        margin-top: 30px;
+    }
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+@media(max-width: 768px){
+    #benefits{
+        padding: 50px;
+    }
+
+    #benefits-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .benefits-list {
+        padding-top: 10px;
+        padding-right: 0;
+    }
+
+    #benefits img{
+        max-width: 10%;
+    }
+}
+/* --- TELEFONY (max 480px) ---*/
+@media(max-width: 480px){
+    #benefits{
+        padding: 30px;
+    }
+
+    #benefits img{
+        max-width: 12%;
+    }
+}
+
+        /* ---- SEKCJA About-me ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.about-me {
+    padding: 50px 0;
+}
+
+#about-me-title {
+    margin: 70px;
+    margin-top: 20px;
+}
+
+#about-me-description{
+    margin:0;
+}
+
+.about-me-text {
+    padding: 0 40px;
+    text-align: justify;
+}
+
+.about-me-text p {
+    margin-bottom: 30px;
+}
+
+#about-me-image img {
+    width: 100%;
+}
+
+/* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+@media (max-width:1200px){
+    #about-me-title {
+        margin: 40px;
+        margin-top: 0;
+    }
+}
+/* --- TABLETY W PIONIE (max 768px) ---*/
+@media (max-width:768px){
+
+    #about-me-description{
+        padding: 0;
+        
+    }
+    #about-me-image {
+        padding: 30px;
+    }
+}
+
+/* --- TELEFONY (max 480px) ---*/
+
+@media (max-width:480px){
+    #about-me-title {
+        margin: 40px;
+        margin-top: 0;
+    }
+}
+
+
+        /* ---- SEKCJA Last-CTA ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+.last-cta-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px 0;
+}
+
+.last-cta-header img {
+    max-width: 8%;
+}
+
+.last-cta-content p {
+    padding: 25px;
+}
+
+#last-cta-button {
+    margin: 50px;
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+@media (max-width:768px) {
+    .last-cta-header img {
+    max-width: 10%;
+}
+    #last-cta-title {
+        margin-bottom: 30px;
+    }
+
+    .last-cta-content p {
+        padding: 10px 25px;
+
+    }
+}
+/* --- TELEFONY (max 480px) ---*/
+@media (max-width:480px) {
+
+    .last-cta-header {
+        padding: 50px 30px 0;
+    }
+    .last-cta-header img {
+    max-width: 15%;
+}
+    #last-cta-button {
+        margin: 30px;
+    }
+
+    #last-cta-button a {
+        padding: 15px 20px;
+    }
+}
+
+
+        /* ---- SEKCJA FAQ ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+.faq-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+details {
+    margin-bottom: 15px;
+    border: 1px solid #e7dfd8;
+    transition: all 0.3s ease;
+}
+
+summary {
+    display: block; 
+    padding: 20px;
+    font-family: 'Inter';
+    font-size: clamp(16px, 1.2vw, 24px);
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+}
+
+summary::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    color: #bfa083;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(45deg);
+    color: black;
+}
+
+.faq-content {
+    padding: 0 20px 20px 20px;
+}
+
+.faq-content p{
+    margin: 0;
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+@media (max-width:768px){
+
+    #faq-title {
+        margin: 30px 0;
+    }
+
+    .faq-container {
+    max-width: 100%;
+    padding: 0;
+    }
+}
+
+        /* ---- SEKCJA References ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.section-background-color-light {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7dfd8;
+    padding-top: 50px;
+}
+
+#references-title {
+    margin: 80px;
+}
+
+#opinion-one-third {
+    padding: 40px;
+}
+
+#opinion-one-third:first-child {
+    padding: 30px;
+}
+
+.name {
+    margin: 20px;
+    font-family: "Inter";
+    font-size: clamp(18px, 1.5vw, 32px);
+    text-align: center;
+}
+
+.opinion-text {
+    font-family: 'Inter';
+    font-size: clamp(10px, 1.1vw, 25px);
+    margin-top: 50px;
+}
+
+.references-link {
+    margin: 30px;
+    font-family: 'Inter';
+    font-size: clamp(18px, 1.5vw, 32px);
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.references-link a{
+    text-decoration: none;
+    font-weight: normal;
+    color: #bfa083;
+}
+
+#references-button {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+
+/* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+@media(max-width:1200px){
+    #references-title {
+    margin: 50px;
+}
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+
+@media(max-width:768px){
+    .name {
+    margin: 0;
+}
+    .opinion-text {
+        margin-top: 40px;
+    }
+}
+/* --- TELEFONY (max 480px) ---*/
+
+@media(max-width:480px){
+    #references-title {
+    margin: 10px 20px 30px;
+}
+
+    #opinion-one-third {
+        margin-bottom: 30px;
+    }
+}
+
+
+        /* ---- SEKCJA Contact ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+.section-background-color-dark {
+    width: 100%;
+    min-height: 80vh;
+    background-color: #bfa083;
+    padding: 50px;
+}
+
+.asymetric-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.small-part {
+    width: 40%
+}
+
+.small-part img {
+    width: 100%;
+}
+
+.big-part {
+    width: 55%;
+    padding: 20px;
+}
+
+#last-call {
+    margin: 30px;
+    margin-top: 50px;
+}
+
+/* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+
+@media (max-width: 1200px) {
+    #last-calendar {
+        height: 630px;
+    }
+}
+/* --- TABLETY W PIONIE (max 768px) ---*/
+
+@media (max-width:768px) {
+    .asymetric-box {
+        flex-direction: column;
+    }
+
+    .small-part {
+        width: 100%;
+    }
+
+    .big-part {
+        width: 100%;
+    }
+
+    #last-call {
+        margin: 30px 0;
+        
+    }
+}
+/* --- TELEFONY (max 480px) ---*/
+
+@media (max-width:480px) {
+    #contact {
+        padding: 30px;
+        padding-top: 40px;
+    }
+
+    .big-part {
+        padding: 0;
+    }
+
+    #last-calendar {
+        height: 650px;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #bfa083;
+    font-size: clamp(10px, 0.8vw, 14px);
+}

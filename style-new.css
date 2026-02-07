@@ -1,0 +1,1224 @@
+/* --- GENERAL --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', 'Montserrat', sans-serif;
+}
+
+
+        /* ---- SEKCJA Hero ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 100%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 20px 20px;
+    width: 65%;
+    max-height: 100vh;
+}
+
+.hero-image {
+    display: flex;
+    width: 35%;
+    justify-content: right;
+}
+
+.hero-image img {
+    max-height: 100vh;
+    width: 100%;
+}
+
+.small-text {
+    font-family: 'Montserrat';
+    font-size: clamp(14px, 1.3vw, 25px);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-family: 'Oswald';
+    font-size: clamp(25px, 3.1vw, 80px);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.slogan {
+    padding: 0 55px 80px;
+    font-family: 'Montserrat';
+    font-size: clamp(15px, 1.8vw, 50px);
+    text-align: center;
+}
+
+#hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button a {
+    padding: 20px 30px;
+    font-family: 'Montserrat';
+    font-size: clamp(15px, 1.8vw, 45px);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #bfa083;
+    border: none;
+    border-radius: 20px;
+    min-width: 230px;
+}
+
+.button a:hover {
+    color: black;
+    background-color: #e7dfd8;
+}
+ /* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+
+ @media (max-width: 1200px) {
+    .hero-text {
+        margin: 80px 25px;
+        padding: 10px 10px;    
+}
+
+    .hero-image {
+        width: auto;
+    }
+
+ }
+
+ /* --- TABLETY W PIONIE (max 768px) ---*/
+
+ @media (max-width: 768px) {
+
+    .hero-content{
+        flex-direction: column;
+    }
+    .hero-text {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+        padding: 25px;
+    }
+
+    .slogan {
+        padding: 0 20px 60px;
+
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+ }
+
+ /* --- TELEFONY (max 480px) ---*/
+
+ @media (max-width: 480px) {
+
+    #hero-button a {
+        padding: 15px 20px;
+ }
+}
+
+        /* ---- SEKCJA Problem-solution ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.problem-solution {
+    width: 100%;
+    min-height: 80vh;
+    background-color: white;
+}
+
+.border {
+    margin: 50px;
+    margin-bottom: 100px;
+    padding: 30px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(Images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.heading {
+    color: black;
+    font-family: 'Lora';
+    font-size: clamp(20px, 2.8vw, 60px);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.heading::after {
+    content: "";       
+    position: absolute;
+    bottom: -10px;
+    left: 50%; transform: translateX(-50%);
+    height: 2px;
+    background-color: #beb3a6;
+    border-radius: 1px;
+}
+
+#problem::after {
+    width: 92%;
+}
+
+.box-two-places {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.first-place {
+    width: 50%;
+    padding: 20px;
+    margin: 0 40px;
+}
+
+.second-place {
+    width: 50%;
+    padding: 20px;
+}
+
+.regular-text {
+    color: black;
+    font-family: 'Montserrat';
+    font-size: clamp(12px, 1.5vw, 32px);
+    line-height: 1.5;
+}
+
+#problem-description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.list-title {
+    color: black;
+    font-family: 'Montserrat';
+    font-size: clamp(12px, 1.5vw, 32px);
+    font-weight: 600;
+}
+
+#solution {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style-type: "✅";
+}
+
+#solution li {
+    color: black;
+    font-family: 'Montserrat';
+    font-size: clamp(12px, 1.5vw, 32px);
+    line-height: 1.5;
+}
+
+.strong-text {
+    color: black;
+    font-family: 'Montserrat';
+    font-size: clamp(12px, 1.5vw, 32px);
+    font-weight: bold;
+}
+
+
+#strong {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#problem-solution-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#calendar {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+}
+    
+
+.calendly-inline-widget {
+    min-width: 320px;
+    height: 890px ;
+}
+
+
+/* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+@media (max-width: 1200px) {
+    .border {
+        margin: 50px 35px;
+        padding: 35px;
+    }
+
+    #problem {
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+
+    .first-place {
+        margin: 0 10px;
+    }
+
+    #problem-description {
+        margin-top: 0;
+    }
+
+    #problem-solution-button {
+        margin-top: 60px;
+    }
+
+    #problem-solution-button a {
+        padding: 15px 20px;
+    }
+
+    .calendly-inline-widget {
+        min-width: 300px;
+        height: 550px;
+    }
+
+}
+
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+
+@media (max-width: 768px) {
+
+    .box-two-places {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-place {
+        width: auto;
+        margin: 0;
+    }
+
+    #problem-solution-button {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #problem-solution-button a {
+        padding: 15px 20px;
+    }
+
+    .second-place {
+        width: auto;
+        padding: 0;
+    }
+    
+    .calendly-inline-widget {
+        min-width: 320px;
+        height: 650px;
+    }
+
+    
+
+}
+/* --- TELEFONY (max 480px) ---*/
+
+@media (max-width: 480px) {
+
+    .border {
+        margin: 50px 30px;
+        padding: 30px;
+    }
+
+    #problem {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .first-place {
+        margin: 0 10px;
+    }
+
+    
+    .calendly-inline-widget {
+        min-width: 240px;
+        height: 650px;
+    }
+
+}
+
+        /* ---- SEKCJA Collaboration-process ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.section-background-image {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('Images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#process-title::after {
+    width: 110%;
+}
+
+.cards-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding: 30px;
+    padding-top: 7%;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 18%;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.number {
+    font-family: 'Lora';
+    font-size: clamp(18px, 4vw, 45px);
+    text-align: center;
+}
+
+.stage-title {
+    font-family: 'Lora';
+    font-size: clamp(18px, 1.5vw, 32px);
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.stage-text {
+    font-family: 'Montserrat';
+    font-size: clamp(16px, 1.3vw, 30px);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-text {
+    font-family: 'Lora';
+    font-size: clamp(16px, 1.5vw, 25px);
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px; 
+}
+
+/* --- LAPTOPY (max 1200px) --- */
+
+@media (max-width: 1200px){
+    .cards-box {
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 30%;
+}
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+
+@media (max-width: 768px){
+    .cards-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 75%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 40px;
+        padding-top: 12%;
+    }
+
+}
+
+/* --- TELEFONY (max 480px) ---*/
+
+@media (max-width: 480px) {
+    .cards {
+        width: 85%;
+        padding: 20px;
+        padding-top: 60px;
+    }
+}
+
+
+        /* ---- SEKCJA Case-studies ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.case-studies {
+    padding-bottom: 50px;
+}
+
+#case-studies-title::after {
+    width: 80%;
+}
+
+.case-studies-content {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+}
+
+.slide {
+    flex: 0 0 30%;
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+}
+
+.client {
+    font-family: 'Lora';
+    font-size: clamp(14px, 1vw, 20px);
+    margin-bottom: 10px;
+}
+
+.description-text {
+    font-family: 'Lora';
+    font-size: clamp(14px, 1vw, 20px);
+    margin-bottom: 15px;
+}
+
+#case-studies-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+@media (max-width: 768px) {
+
+    #case-studies-title {
+        margin: 30px;
+    }
+    
+    .slide {
+        flex: 0 0 60%;
+    }
+}
+
+/* --- TELEFONY (max 480px) ---*/
+@media (max-width: 480px) {
+
+    .case-studies-content{
+        padding: 30px;
+    }
+
+    .slide {
+        flex: 0 0 80%;
+    }
+
+    #case-studies-button {
+        padding: 30px;
+    }
+}
+
+        /* ---- SEKCJA Benefits ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+    #benefits-title::after {
+        width: 120%;
+}
+
+    #benefits-stages {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 70px;
+        padding: 30px;
+}
+
+    #benefits-stages-title{
+        font-size: clamp(18px, 1.3vw, 32px);
+        text-align: center;
+    }
+
+    .one-card{
+        width: 96%;
+        margin-bottom: 70px;
+        padding: 40px;
+        background-color: rgb(157, 134, 106, 0.5);
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    #benefits-text{
+        line-height: 2;
+}
+
+    #reasons-title {
+        font-family: 'Lora';
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #third-reason {
+        font-weight: bold;
+    }
+
+
+/* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+@media (max-width: 1200px){
+
+    #benefits-cards-box{
+        flex-wrap: wrap;
+    }
+    
+    #benefits-stages{
+        width: 30%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    #reasons-title{
+        font-size: clamp(18px, 1.5vw, 32px);
+    }
+
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+@media(max-width: 768px){
+
+    #benefits-title {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    #benefits-stages{
+        width: 80%;
+    }
+    
+    .one-card{
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    #benefits-text p{
+        margin-bottom: 15px;
+    }
+
+    #reasons-title{
+        line-height: 1.5;
+    }
+
+}
+/* --- TELEFONY (max 480px) ---*/
+@media(max-width: 480px){
+    #benefits{
+        padding: 30px;
+    }
+
+}
+
+        /* ---- SEKCJA About-me ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.about-me {
+    padding: 50px 0;
+}
+
+#about-me-title {
+    margin: 70px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#about-me-title::after {
+    left: 10%; 
+    width: 20%;
+}
+
+#about-me-description{
+    margin:0;
+}
+
+.about-me-text {
+    padding: 0 40px;
+    text-align: justify;
+}
+
+.about-me-text p {
+    margin-bottom: 30px;
+}
+
+.regular-text strong {
+    color: #856855;
+}
+
+#meet-me {
+    font-weight: bold;
+    color: #856855;
+    text-align: center;
+}
+
+#about-me-image img {
+    width: 100%;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+#about-me-box::after {
+    content: "";       
+    position: absolute;
+    bottom: -10px;
+    left: 50%; transform: translateX(-50%);
+    height: 2px;
+    background-color: #beb3a6;
+    border-radius: 1px;
+    width: 85%;
+}
+
+.highlited-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+.highlited-text p {
+    color: #856855;
+    font-family: 'Lora';
+    font-size: clamp(18px, 1.8vw, 32px);
+    text-transform: uppercase;
+}
+
+/* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+@media (max-width:1200px){
+    #about-me-title {
+        margin: 40px 60px 20px;
+        
+    }
+}
+/* --- TABLETY W PIONIE (max 768px) ---*/
+@media (max-width:768px){
+
+    #about-me-title {
+        margin-left: 40px;
+    }
+
+    #about-me-description{
+        padding: 0;
+        
+    }
+    #about-me-image {
+        padding: 30px;
+    }
+}
+
+/* --- TELEFONY (max 480px) ---*/
+
+@media (max-width:480px){
+    #about-me-title {
+        margin: 40px;
+        margin-top: 0;
+    }
+
+    #about-me-title::after {
+        width: 40%;
+        left: 20%;
+    }
+}
+
+
+        /* ---- SEKCJA Last-CTA ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+#last-cta-title {
+    padding: 45px;
+    font-size: clamp(20px, 2.6vw, 60px);
+}
+
+.icons-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.icon-elements {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-elements i {
+    font-size: clamp(40px, 6vw, 80px);
+    color: #856855;
+    margin: 10px;
+}
+
+#last-cta-button {
+    margin: 50px;
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+@media (max-width:768px) {
+  
+    #last-cta-title {
+        margin-bottom: 30px;
+    }
+
+    .icon-elements {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+/* --- TELEFONY (max 480px) ---*/
+@media (max-width:480px) {
+
+    #last-cta-title {
+        margin: 0;
+    }
+
+    .icons-box {
+        padding: 20px;
+    }
+
+    .icon-elements {
+        width: 90%;
+    }
+
+    #last-cta-button {
+        margin: 50px 10px;
+    }
+
+    #last-cta-button a {
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+}
+
+        /* ---- SEKCJA CTA-description ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.cta-description {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(Images/background-2.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% 100%;
+    padding: 50px;
+}
+
+#cta-description-title {
+    text-align: left;
+    font-size: clamp(20px, 2.2vw, 60px);
+}
+
+.cta-description-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.first-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.first-box p {
+    font-size: clamp(12px, 1.2vw, 32px);
+    margin-bottom: 40px;
+}
+
+.second-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+#cta-desc-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- TABLETY (max 768px) ---*/
+@media (max-width:768px) {
+
+    .cta-description {
+        background-position: bottom;
+        background-size: cover;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(Images/background-2.jpg);
+        padding: 30px;
+    }
+
+    #cta-description-title {
+        margin: 0 0 30px;
+    }
+    .first-box {
+        width: 100%;
+    }
+
+    .second-box {
+        min-height: 50%;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* --- TELEFONY (max 480px) ---*/
+@media (max-width:480px) {
+    #cta-desc-button a{
+        padding: 15px 20px;
+        margin-bottom: 10px;
+    }
+}
+
+        /* ---- SEKCJA FAQ ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.faq {
+    padding: 40px;
+}
+
+.faq-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+details {
+    margin-bottom: 15px;
+    border: 1px solid #e7dfd8;
+    transition: all 0.3s ease;
+}
+
+summary {
+    display: block; 
+    padding: 20px;
+    font-family: 'Lora';
+    font-size: clamp(16px, 1.2vw, 24px);
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+}
+
+summary::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    color: #bfa083;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(45deg);
+    color: black;
+}
+
+.faq-content {
+    padding: 0 20px 20px 20px;
+}
+
+.faq-content p{
+    margin: 0;
+    font-size: clamp(12px, 1.2vw, 32px);
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+@media (max-width:768px){
+
+    .faq-container {
+        max-width: 90%;
+        padding: 0;
+    }
+}
+
+        /* ---- SEKCJA References ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.logo-text {
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-size: clamp(12px, 1.2vw, 32px);
+    text-transform: uppercase;
+}
+
+#references-title {
+    margin: 50px 0;
+}
+
+#references-title::after {
+    width: 110%;
+}
+
+#opinion-one-third {
+    padding: 40px;
+    width: 30%;
+}
+
+#opinion-one-third:first-child {
+    padding: 30px;
+}
+
+#decoration-top {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(30px, 5vw, 80px);
+    color: gold;
+    text-align: center;
+}
+
+#opinion-text {
+    font-family: 'Montserrat';
+    font-size: clamp(10px, 1.1vw, 25px);
+    margin-top: 50px;
+}
+
+#name {
+    margin-top: auto;
+    padding-top: 20px;
+    font-family: 'Montserrat';
+    font-size: clamp(18px, 1.5vw, 32px);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.references-link {
+    margin: 30px;
+    font-family: 'Montserrat';
+    font-size: clamp(18px, 1.5vw, 32px);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.references-link a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #856855;
+  
+}
+
+#references-button {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+
+/* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+@media(max-width:1200px){
+    #references-title {
+        margin: 50px;
+}
+}
+
+/* --- TABLETY W PIONIE (max 768px) ---*/
+
+@media(max-width:768px){
+    #name {
+        margin: 0;
+}
+    #opinion-text {
+        margin-top: 40px;
+    }
+
+    #opinion-one-third {
+        width: 70%;
+    }
+}
+/* --- TELEFONY (max 480px) ---*/
+
+@media(max-width:480px){
+    #references-title {
+    margin: 10px 20px 30px;
+}
+
+    #references-title::after {
+        width: 90%;
+}
+
+    #opinion-one-third {
+        margin-bottom: 30px;
+    }
+
+    #references-button a{
+        padding: 15px;
+    }
+}
+
+
+        /* ---- SEKCJA Contact ---- */
+/* --- STYLE GŁÓWNE (powyżej 1200px) --- */
+
+.section-background-color-dark {
+    width: 100%;
+    min-height: 80vh;
+    background-color: #bfa083;
+    padding: 50px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 20px;
+    background-image: url(Images/portrait-2.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 55%;
+    padding: 20px;
+}
+
+#last-slogan {
+    padding: 30px 0;
+}
+
+#last-call {
+    margin: 40px;
+}
+
+#last-calendar {
+    height: 600px;
+}
+
+/* --- LAPTOPY/MAŁE MONITORY (max. 1200px) ---*/
+
+@media (max-width: 1200px) {
+
+    .box{
+        background-size: 50% 100%;
+    }
+    
+    .content {
+        width: 50%;
+    }
+
+    #last-slogan {
+        padding: 30px 0 10px;
+    }
+
+    #last-call {
+        margin:15px;
+    }
+
+    #last-calendar {
+        height: 500px;
+    }
+}
+/* --- TABLETY W PIONIE (max 768px) ---*/
+
+@media (max-width:768px) {
+    .box {
+        flex-direction: column;
+        justify-content: flex-start;
+        background-size: 100% 600px;
+        background-position: top;
+    }
+
+    .content {
+        width: 100%;
+        padding-top: 620px;
+    }
+    
+    #last-call {
+        margin: 30px 0;
+        
+    }
+}
+/* --- TELEFONY (max 480px) ---*/
+
+@media (max-width:480px) {
+    #contact {
+        padding: 30px;
+        padding-top: 40px;
+    }
+
+    .box {
+        background-size: 100% 500px;
+    }
+
+    .content {
+        padding-top: 520px;
+    }
+
+    #last-calendar {
+        height: 400px;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #bfa083;
+    font-size: clamp(10px, 0.8vw, 14px);
+}
